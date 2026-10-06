@@ -165,7 +165,8 @@ on boot
     chmod 0664 /sys/class/battman_dbg/log_interval
     chmod 0664 /sys/class/battman_dbg/log_categories
     chmod 0664 /sys/class/battman_dbg/log_level
-    chmod 0664 /sys/class/qcom-battery/wireless_boost_en
+    chown system system /sys/class/qcom-battery/wireless_boost_en
+    chmod 0660 /sys/class/qcom-battery/wireless_boost_en
     chmod 0444 /sys/kernel/debug/battery_debug/votables/fv_tot/status
     chmod 0444 /sys/kernel/debug/battery_debug/votables/iusb0_tot/status
     chmod 0444 /sys/kernel/debug/battery_debug/votables/fcc_tot/status

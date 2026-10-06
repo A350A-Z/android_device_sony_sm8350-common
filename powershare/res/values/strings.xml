@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="powershare_title">无线反充</string>
+    <string name="powershare_summary">与其他设备进行无线反向充电</string>
+
+    <string name="powershare_enabled">无线反充</string>
+
+    <string name="powershare_disconnect_title">未连接设备自动关闭</string>
+    <string name="powershare_disconnect_summary">没有检测到接收设备时自动关闭无线反充</string>
+
+    <string name="powershare_disconnect_timeout_title">自动关闭时间</string>
+
+    <string name="powershare_battery_limit_title">剩余电量限制</string>
+    <string name="powershare_battery_limit_summary">手机电量低于此值时自动关闭无线反充</string>
+
+    <string name="powershare_time_limit_title">充电时间限制</string>
+    <string name="powershare_time_limit_summary">达到设定时间后自动关闭无线反充</string>
+
+    <string name="powershare_timeout_never">永不</string>
+
+    <string name="powershare_min_5">5%%</string>
+    <string name="powershare_min_10">10%%</string>
+    <string name="powershare_min_15">15%%</string>
+    <string name="powershare_min_20">20%%</string>
+    <string name="powershare_min_25">25%%</string>
+    <string name="powershare_min_30">30%%</string>
+    <string name="powershare_min_40">40%%</string>
+    <string name="powershare_min_50">50%%</string>
+
+    <string name="powershare_1_minute">1 分钟</string>
+    <string name="powershare_5_minutes">5 分钟</string>
+    <string name="powershare_10_minutes">10 分钟</string>
+    <string name="powershare_15_minutes">15 分钟</string>
+    <string name="powershare_30_minutes">30 分钟</string>
+
+    <string name="powershare_30_minutes_long">30 分钟</string>
+    <string name="powershare_60_minutes">1 小时</string>
+    <string name="powershare_120_minutes">2 小时</string>
+    <string name="powershare_180_minutes">3 小时</string>
+    <string name="powershare_240_minutes">4 小时</string>
+    <string name="powershare_360_minutes">6 小时</string>
+
+    <string name="powershare_status_on">已开启</string>
+    <string name="powershare_status_off">已关闭</string>
+
+</resources>

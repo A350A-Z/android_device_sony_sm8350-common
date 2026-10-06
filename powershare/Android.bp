@@ -1,0 +1,31 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "SonyPowerShareSettings",
+
+    srcs: [
+        "src/**/*.java",
+    ],
+
+    resource_dirs: [
+        "res",
+    ],
+
+    static_libs: [
+        "SettingsLibCollapsingToolbarBaseActivity",
+        "androidx.preference_preference",
+        "androidx.appcompat_appcompat",
+        "vendor.lineage.powershare-V1-java",
+    ],
+
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+    system_ext_specific: true,
+
+    optimize: {
+        enabled: false,
+    },
+}

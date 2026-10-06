@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="powershare_enabled"
+        android:title="@string/powershare_enabled"
+        android:summary="@string/powershare_summary"
+        android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:title="自动关闭">
+
+        <SwitchPreferenceCompat
+            android:key="powershare_disconnect_enabled"
+            android:title="@string/powershare_disconnect_title"
+            android:summary="@string/powershare_disconnect_summary"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="powershare_disconnect_timeout"
+            android:title="@string/powershare_disconnect_timeout_title"
+            android:entries="@array/powershare_disconnect_entries"
+            android:entryValues="@array/powershare_disconnect_values"
+            android:defaultValue="1"
+            android:summary="%s" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="电池保护">
+
+        <ListPreference
+            android:key="powershare_battery_limit"
+            android:title="@string/powershare_battery_limit_title"
+            android:summary="@string/powershare_battery_limit_summary"
+            android:entries="@array/powershare_battery_entries"
+            android:entryValues="@array/powershare_battery_values"
+            android:defaultValue="20" />
+
+        <ListPreference
+            android:key="powershare_time_limit"
+            android:title="@string/powershare_time_limit_title"
+            android:summary="@string/powershare_time_limit_summary"
+            android:entries="@array/powershare_time_entries"
+            android:entryValues="@array/powershare_time_values"
+            android:defaultValue="60" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

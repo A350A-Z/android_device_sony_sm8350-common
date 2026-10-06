@@ -29,6 +29,15 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Include common vendor stuff
 $(call inherit-product, vendor/sony/sm8350-common/sm8350-common-vendor.mk)
 
+#Sony wireless reverse charging XperiaLabs/hardware_sony
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare-service.sony
+
+$(call soong_config_set,SONY_POWERSHARE,WIRELESS_TX_ENABLE_PATH,/sys/class/qcom-battery/wireless_boost_en)
+#Sony Wireless reverse charging
+PRODUCT_PACKAGES += \
+    SonyPowerShareSettings
+
 # VNDK
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
@@ -133,7 +142,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     tinyplay \
     tinymix \
-    audio_amplifier.qcom
+    audio_amplifier.lahaina
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -296,8 +305,8 @@ PRODUCT_PACKAGES += \
     lights.sony
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay-service.sony
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay-service.sony
 
 # Net
 PRODUCT_PACKAGES += \
@@ -367,8 +376,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch-service.sony
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch-service.sony
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -418,8 +427,8 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
 # XperiaParts
-PRODUCT_PACKAGES += \
-    XperiaParts
+#PRODUCT_PACKAGES += \
+#    XperiaParts
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
